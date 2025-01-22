@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment1(DT2G)</title>
+    <link rel="stylesheet" href="css/pictures.css">
+    <script src="main.js" defer></script>
+    <!-- links to my favicon as well as fonts and icons used for the menu-->
+    <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon-1.webp" width="32px" height="32px">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" width="32px" height="32px">
+    <link rel="icon" type="image/webp" sizes="16x16" href="images/favicon.webp" width="16px" height="16px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+        <!--Navigation, banner as well as footer is the same for all 3 pages-->
+<div class="container">
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="images/logo-svg.webp" alt="logo"></a></h1>
+        <!-- Menu for tablet and phone-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- nav -->
+        <nav id="nav-menu">
+            <!-- when the mobile nav is visable-->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <!--The options-->
+            <ul>
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="about.html">OM MIG</a></li>
+                <li><a href="pictures.html">BILDBEHANDLING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <picture class="banner">
+        <source srcset="images/header1.webp" type="image/webp">
+        <source srcset="images/header.jpg" type="image/jpeg">
+        <img src="images/header.jpg" alt="picture taken of london city from the london bridge" class="responsive-img" loading="lazy">
+    </picture>
+        <footer class="footer">
+            <p>Laborationsuppgift för kursen DT211G</p>
+            <p>&#169; Copyright Manar Matroud, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

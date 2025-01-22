@@ -1,0 +1,237 @@
+/*general styling, same on all pages*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+    --color2: #bbc7a4;
+}
+
+/* Menu */
+.container{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    'nav'
+    'banner'
+    'header1'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+/* header design */
+header {
+    grid-area: nav;
+    height: 80px;
+    width: 100vw;
+    background-color: #bbc7a4;
+    margin: 0;
+    position: fixed;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #000;
+    font-size: 0.8em;
+    margin: 0;
+    text-decoration: none;
+}
+.logo a img{
+    border-radius: 50%;
+}
+
+
+/* The design for the nav in mobile and tablet */
+nav {
+    background-color: #bbc7a4;
+    box-shadow: 2px 0px 1000px rgba(0, 0, 0, 0.71);
+    font-size: 1.4em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+nav li:hover {
+    background-color: #bbc7a4;
+    cursor: pointer;
+}
+
+/* Menu, open btn */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #bbc7a4;
+    border: black solid 2px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #bbc7a4;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+/* the hamburger lines */
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+/* Menu close button */
+.close {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+
+}
+
+/* making the X */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* nav in bigger screens */
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 0 3em;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+        right: 0;
+    }
+
+    header {
+        position: fixed;
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 18px;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+}
+/*banner part*/
+.banner{
+    object-fit: cover;
+    width: 100vw;
+    height: 685px;
+}
+.responsive-img {
+    width: 100vw;
+    height: 685px;
+    object-fit: cover;
+}
+/*styling of the actual content, i mobile and tablet view first*/
+/*footer is the same on all pages*/
+.footer{
+    grid-area: footer;
+    width: 100vw;
+    background-color: #bbc7a4;
+    text-align: center;
+    padding: 2rem;
+    font-size: 18px;
+}
+h1{
+    font-size: 42px;
+}
+h2{
+    font-size: 36px;
+}
+/*styling of the actual content, in browser*/
+@media (min-width: 700px) {
+    .container{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'banner'
+        'header'
+        'header1'
+        'pic1'
+        'header2'
+        'pic2'
+        'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .nav-bar{
+        grid-area: nav;
+    }
+    .banner{
+        grid-area: banner;
+        width: 100vw;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+    
+}
