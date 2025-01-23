@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     line-height: 1.15cm;
-
 }
 body{
     font-family: 'Roboto', sans-serif; 
@@ -192,9 +191,8 @@ nav li:hover {
 /*styling of the actual content, i mobile and tablet view first*/
 main{
     margin-top: 2em;
-    padding: 15em 6em ;
+    padding: 15em 6em;
 }
-
 /*footer is the same on all pages*/
 .footer{
     grid-area: footer;
@@ -211,34 +209,21 @@ h2{
     font-size: 36px;
 }
 /*styling of the actual content, in browser*/
-@media (min-width: 700px) {
-    .container{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-areas: 
-        'nav'
-        'banner'
-        'header'
-        'header1'
-        'pic1'
-        'header2'
-        'pic2'
-        'footer';
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .nav-bar{
-        grid-area: nav;
-    }
-    .banner{
-        grid-area: banner;
+@media (max-width: 950px){
+    body{
         width: 100vw;
     }
-
-    .footer{
-        grid-area: footer;
+    main{
+        margin: 0;
+        padding: 6em 0;
     }
-
-    
+    section{
+        box-sizing: border-box;
+        margin: 0;
+        padding: .5em;
+    }
+    h1{
+        font-size: 1.5em;
+        width: 300px;
+    }
 }
