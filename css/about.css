@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.15cm;
+
 }
 body{
     font-family: 'Roboto', sans-serif; 
@@ -188,6 +190,11 @@ nav li:hover {
     object-fit: cover;
 }
 /*styling of the actual content, i mobile and tablet view first*/
+main{
+    margin-top: 2em;
+    padding: 15em 6em ;
+}
+
 /*footer is the same on all pages*/
 .footer{
     grid-area: footer;
