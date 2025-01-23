@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif; 
-    --color2: #bbc7a4;
+    --color2: pink;
 }
 
 /* Menu */
@@ -27,7 +27,7 @@ header {
     grid-area: nav;
     height: 80px;
     width: 100vw;
-    background-color: #bbc7a4;
+    background-color: pink;
     margin: 0;
     position: fixed;
     padding: 0 1em;
@@ -49,7 +49,7 @@ header {
 
 /* The design for the nav in mobile and tablet */
 nav {
-    background-color: #bbc7a4;
+    background-color: pink;
     box-shadow: 2px 0px 1000px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: fixed;
@@ -80,7 +80,7 @@ nav a {
 }
 
 nav li:hover {
-    background-color: #bbc7a4;
+    background-color: pink;
     cursor: pointer;
 }
 
@@ -89,13 +89,13 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: #bbc7a4;
+    background-color: pink;
     border: black solid 2px;
     cursor: pointer;
 }
 
 .menu-btn:hover {
-    background-color: #bbc7a4;
+    background-color: pink;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -192,7 +192,7 @@ nav li:hover {
 .footer{
     grid-area: footer;
     width: 100vw;
-    background-color: #bbc7a4;
+    background-color: pink;
     text-align: center;
     padding: 2rem;
     font-size: 18px;

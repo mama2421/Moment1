@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment1(DT2G)</title>
-    <link rel="stylesheet" href="css/pictures.css">
+    <title>Moment1(DT211G)</title>
+    <link rel="stylesheet" href="css/about.css">
     <script src="main.js" defer></script>
     <!-- links to my favicon as well as fonts and icons used for the menu-->
     <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon-1.webp" width="32px" height="32px">
@@ -16,7 +16,7 @@
         <!--Navigation, banner as well as footer is the same for all 3 pages-->
 <div class="container">
     <header>
-        <h1 class="logo"><a href="index.html"><img src="images/logo-svg.webp" alt="logo"></a></h1>
+        <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></h1>
         <!-- Menu for tablet and phone-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -39,20 +39,42 @@
             <!--The options-->
             <ul>
                 <li><a href="index.html">STARTSIDA</a></li>
-                <li><a href="about.html">OM MIG</a></li>
-                <li><a href="pictures.html">BILDBEHANDLING</a></li>
+                <li><a href="pictures.html">BILSGALLERI</a></li>
+                <li><a href="about.html">ARBETSPROCESS</a></li>
             </ul>
         </nav>
     </header>
-    <picture class="banner">
-        <source srcset="images/header1.webp" type="image/webp">
-        <source srcset="images/header.jpg" type="image/jpeg">
-        <img src="images/header.jpg" alt="picture taken of london city from the london bridge" class="responsive-img" loading="lazy">
-    </picture>
-        <footer class="footer">
-            <p>Laborationsuppgift för kursen DT211G</p>
-            <p>&#169; Copyright Manar Matroud, 2025</p>
-        </footer>
-    </div>
+    <main>
+        <section>
+            <h1>
+                Bilder tagna med mobilen och uppladdade
+            </h1>
+            <picture>
+                <source srcset="pic1.jpg?as=webp&width=300" type="image/webp">
+                <img src="images/pic1.jpg?width=300" alt="en macbook som visar inspektera sektionen på en webbsida" loading="lazy">
+            </picture>
+            <picture>
+                <source srcset="pic2.jpg?as=webp&width=300" type="image/webp">
+                <img src="images/pic2.jpg?width=300" alt="bild på projecerat schema på en vit duk" loading="lazy">
+            </picture>
+            <picture>
+                <source srcset="pic3.jpg?as=webp&width=300" type="image/webp">
+                <img src="images/pic3.jpg?width=300" alt="en glad köpare och säljare av en bil skakar hand" loading="lazy">
+            </picture>
+            <picture>
+                <source srcset="pic4.jpg?as=webp&width=300" type="image/webp">
+                <img src="images/pic4.jpg?width=300" alt="en byggnad i Rom under dagen" loading="lazy">
+            </picture>
+            <picture>
+                <source srcset="pic5.jpg?as=webp&width=300" type="image/webp">
+                <img src="images/pic5.jpg?width=300" alt="fem människor posar på en gata till en bild som tags från andra våningen" loading="lazy">
+            </picture>                                        
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Laborationsuppgift för kursen DT211G</p>
+        <p>&#169; Copyright Manar Matroud, 2025</p>
+    </footer>
+</div>
 </body>
 </html>
