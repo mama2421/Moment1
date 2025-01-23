@@ -1,14 +1,16 @@
 {
   "name": "moment1",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
   }
 }

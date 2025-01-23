@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment1(DT2G)</title>
-    <link rel="stylesheet" href="css/pictures.css">
-    <script src="main.js" defer></script>
+    <title>Moment1(DT211G)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-        <!--Navigation, banner as well as footer is the same for all 3 pages-->
+    <!--Navigation, banner as well as footer is the same for all 3 pages-->
 <div class="container">
     <header>
         <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></h1>
@@ -40,22 +40,48 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>
-                Arbetsprocess:
-            </h1>
-            <p>
-                Börjar med att finna mig fram till en meny-design, <br> väljer den enkla modell vi lärt oss från förra kursen. <br>
-                Jag skapar Git-Repository och gör regelbundna <br> commits medan jag uppdaterar innehållet. <br>
-                Försöker därefter att försöka automatisera via parcel <br> och lära mig att använda denna korrekt. <br>
-            </p>
-        </section>            
-    </main>
-    <footer class="footer">
+<main>
+    <section>
+        <h1>
+            Information om Moment 1
+        </h1>
+        <p>
+        Denna uppgift kommer att utgå från uppgiftsbeskrivning: <br>
+        Bygg en webbplats som innehåller: <br>
+        
+        Tre undersidor: <br>
+        
+        Startsida: Info om uppgiften. <br>
+        Bildgalleri: Minst 5 bilder.<br>
+        Arbetsprocess: Beskrivning av hur du har jobbat med utveckling och publicering.<br>
+        Mappstruktur:<br>
+        
+        En mapp för arbetsfiler (HTML, CSS, JS, bilder).<br>
+        En separat mapp för publicerade, optimerade filer.
+        </p>        
+    </section>
+    <section>
+       <h1>
+        Publicering av webbplatsen
+       </h1>
+       <p>
+        När du gör ändringar i ditt GitHub-repo ska webbplatsen automatiskt uppdateras på internet via en tjänst som: <br>
+
+        GitHub Pages (rekommenderas om du vill ha enkel lösning).<br>
+        Netlify, Render, eller Vercel (för fler funktioner).<br>
+        Tips:<br>
+
+        Använd Git-branches för att hantera publiceringen, t.ex.:<br>
+        development → Använd för testning.<br>
+        main → För färdig version som publiceras.<br>
+
+       </p>
+    </section>
+</main>    
+<footer class="footer">
         <p>Laborationsuppgift för kursen DT211G</p>
         <p>&#169; Copyright Manar Matroud, 2025</p>
-    </footer>
+</footer>
 </div>
 </body>
 </html>
