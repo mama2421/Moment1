@@ -15,5 +15,6 @@
   },
   "dependencies": {
     "svgo": "^3.3.2"
-  }
+  },
+    "browserslist": "> 0.5%, last 2 versions, not dead"
 }
